@@ -45,7 +45,7 @@ main {
     font-style: italic;
     text-shadow: 2px 2px 4px black;
 }
-.bible-verse {
+.daily-bible-verse {
     background-image: url("images/proverbs152627.png");
     background-size: cover;
     background-position: center;
@@ -54,15 +54,6 @@ main {
     margin-top: 20px;
 
     border-radius: 10px;
-
-    color: white;
-    text-align: center;
-
-    font-size: 24px;
-    font-weight: bold;
-    font-style: italic;
-
-    text-shadow: 2px 2px 4px black;
 }
 
 .active {
