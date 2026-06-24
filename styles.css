@@ -38,23 +38,15 @@ main {
     box-shadow: 0px 2px 5px rgba(0,0,0,.2);
 }
 
-.bible-verse p {
-    padding: 60px;
-    margin-top: 20px;
-
-    border-radius: 10px;
-
+.bible-luke {
     color: white;
-    text-align: center;
-
     font-size: 24px;
     font-weight: bold;
     font-style: italic;
-
     text-shadow: 2px 2px 4px black;
 }
 .bible-verse {
-    background-image: url("Images/Proverbs15-26&27.png");
+    background-image: url("images/Proverbs15-26&27.png");
     background-size: cover;
     background-position: center;
 
