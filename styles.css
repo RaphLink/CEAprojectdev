@@ -59,15 +59,16 @@ main {
         url("images/hebrews41516.png");
     background-size: cover;
     background-position: center;
-   
+    font-size: 20px;
+    color: white;
     padding: 20px;
     margin-top: 20px;
     border-radius: 10px;
-    text-shadow: 2px 2px 6px white;
+   
 }
 /* Weekly Bible verse paragraph */
 .weekly-bible-verse p {
-    font-size: 20px;
+    
 } 
 
 .active {
