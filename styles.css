@@ -14,6 +14,7 @@ header {
     color: white;
     padding: 60px 20px;
     text-align: center;
+    text-shadow: 2px 2px 6px black;
 }
 
 main {
@@ -50,13 +51,24 @@ main {
 }
 /* Weekly Bible Verse */
 .weekly-bible-verse {
-    background-image: url("images/proverbs152627.png");
+     background:
+        Linear-gradient(
+            rgba(0,0,0,.35),
+            rgba(0,0,0,.35)
+        ), 
+        url("images/hebrews41516.png");
     background-size: cover;
     background-position: center;
-    padding: 60px;
+   
+    padding: 20px;
     margin-top: 20px;
     border-radius: 10px;
+    text-shadow: 2px 2px 6px white;
 }
+/* Weekly Bible verse paragraph */
+.weekly-bible-verse p {
+    font-size: 20px;
+} 
 
 .active {
     background-color:#402abeab;
@@ -69,7 +81,7 @@ main {
 .welcome-message {
     max-width: 900px;
     margin: auto;
-    font-size: 20px;
+    font-size: 26px;
 }
 
 nav {
