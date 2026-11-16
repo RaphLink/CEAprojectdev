@@ -1,81 +1,222 @@
-<!DOCTYPE html> <!--Tells the browser its an HTML5 webpage-->
 
-<html><!-- Marks the beginning of the webpage -->
-<head><!-- information about the webpage visitors don't see this information-->
-    <title>CEA Projects Dev</title> <!-- text shown browser tab -->
-    <link rel="stylesheet" href="styles.css"> <!-- finds file name styles.css -->
-</head>
-<body>
-    <header>
-        <h1>CEA Project Dev</h1> <!-- h1 is a primary heading of the section  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <p class="welcome-message">Welcome to Christ Establishes All.
-            God has created us to enjoy His creation of this world. He made us in His image.
-            He wants us to follow Him and ask for His guidance and help, and when we seek the 
-            Lord, He will bless us and lead us to salvation.
-        </p>
-        <p class="bible-luke">Luke 9:62 "But Jesus said to him, "No one, having put his
-        hand to the plow , and looking back, is fit for the kingdom of God."</p>
+    <title>CEA Projects | Websites, Spreadsheets & Computer Help</title>
+
+    <meta name="description" 
+        content="CEA Projects provides website development, data management, and custom digital solutions, built with purpose, integrity, and a commitment to serving others.">
     
-        <nav> <!-- creating <a> which is an anchor(hyperlink) -->
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a> <!-- href is Hypertext reference the destination of the link -->
-            <!-- <a href="projects.html">Projects</a>
-            <a href="skills.html">Skills</a>
-            <a href="resume.html">Resume</a> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap"
+    rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- HEADER & NAVIGATION -->
+<header class="site">
+    <div class="wrap bar">
+        <a class="brand" href="index.html">
+            <img src="cea_logo.png" width="56" height="56" alt="">
+            <span>
+                Christ Establishes All
+                <small>CEA Projects: websites and data projects</small>
+            </span>
+        </a>
+
+        <button class="menu" type="button"
+            aria-expanded="false" 
+            aria-controls="site-nav">Menu</button>
+
+        <nav id="site-nav" aria-label="Main">
+            <ul>
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="btn" href="start.html">Get started</a></li>
+            </ul>
         </nav>
+    </div>
+</header>
 
-    </header>
-        <main>
-            <div class="weekly-bible-verse">
-                <h1>Bible Verse of the Day</h1>
-                <h2>Hebrews 4:15-16</h2>
-                <p>
-                "For we do not have a High Priest who cannot sympathize with our weaknesses,
-                 but was in all points tempted as we are, yet without sin. Let us therefore come 
-                 boldly to the throne of grace, that we may obtain mercy and find grace to help in time of need."
-                </p>        
-            </div>  
-            <section id="projects" class="project-card"> <!-- class will pull information from css to create box -->
-                <h2>Featured Project</h2>
-                    <p>
-                    This project demonstrates SQL analysis techniques 
-                    for inventory management and reporting.
-                    </p>
+<main id="main">
 
-                <div class="project-card featured-project"> 
+    <!-- HERO / MAIN INTRODUCTION -->
+    <section class="hero">
+        <div class="wrap hero-grid">
+            <div>
 
-                <h3>Employee Attrition Analysis</h3>
+                <h1>Your Ideas. My Skills. Let's Build Something.</h1>
+                <p class="lede measure">At CEA Projects, I believe technology should make life easier and serve a greater purpose. Whether you need a website, a spreadsheet to keep things organized, help managing information, or assistance with a computer-related project, I'm here to help.</p>
+                <p class="measure">Not sure exactly what you need? Tell me what you're trying to accomplish, and let's figure out what works best for you.</p>
 
-                <p>
-                    SQL analysis project examining employee turnover
-                    and retention trernds.
-                </p>
+                <div class="actions">
+                    <a class="btn" href="start.html">Tell Me About Your Project</a>
+                    <a class="more" href="services.html">Explore My Services &rarr</a>
                 </div>
-            </section>
+            </div>
+        </div>
+    </section>
 
-            <section id="about" class="about-card">
-                <h2>About Me</h2>
-                    <p>Hello my name is Adam Leitlein  and this is site of all my prjects that I will be working on. 
-                This site will show all my Analysis projects that I created to show of my skills in data
-                analysis.
-                    </p>
-            </section>
+    <!-- SERVICES OVERVIEW -->
+    <section aria-labelledby="build-title">
+        <div class="wrap">
+            <h2 id="build-title">What Can I Help You With?</h2>
+            <p class="lede measure">Not every project needs a complicated solution. Sometimes it's a website, sometimes it's a spreadsheet, and sometimes it's simply finding a better way to get something done.</p>
+            <div class="rows">
+                
+                <!-- Websites -->
+                <div class="row">
+                    <h3>Websites &amp; Online Tools</h3>
+                    <div>
+                        <p>Need a website for your business, church, or personal project? I can help create websites, online forms, event sign-ups, and other usefull online tools.</p>
+                        
+                        <p class="for">For anyone looking to establish an online presence or make everyday tasks easier.</p>
+                    </div>
+                </div>
+                <!-- Spreadsheets and Data -->
+                <div class="row">
+                    <h3>Spreadsheets &amp; Data Organizations</h3>
+                    <div>
+                        <p>Have Information scattered across spreadsheets, documents, or paper records? I can help organize it using Excel, Google Sheets, databases, and tracking tools that make information easier to manage and understand.</p>
+                        <p class="for">For anyone who wants a better way to organize information, track progress, or create useful reports.</p>
+                    </div>
+                </div>
 
-            <section id="contact" class="project-card">
-                <h2>Contact</h2>
+                <!-- Computer Help -->
+                <div class="row">
+                    <h3>Computer Help &amp; Guidance</h3>
+                    <div>
+                        <p>Having trouble with a computer program, setting, or everyday technology task? I can help troubleshoot common problems, explain how things work, and walk you through possible solutions.</p>
+                        <p class="for">For anyone who needs a little help getting technology to work for them.</p>
+                    </div>
+                </div>
 
-                <a href="https://github.com/RaphLink" target="_blank"> GitHub</a>
-                <a href="" target="_blank"> LinkedIn</a>
-                <a href="mailto:aleitlein@ceaprojectdev.com" target="_blank"> Email Me</a> <!-- mailto will open outlook -->
-            </section>
-        </main>
-        <footer>
-            <p>&copy; 2026 CEA Project Dev</p>
-            <a href="https://christestablishesall.com">Christ Establishes All</a>
-            
-        </footer>
+                <!-- Other Projects-->
+                <div class="row">
+                    <h3>Have Something Else in Mind?</h3>
+                    <div>
+                        <p>Not every idea fits neatly into a category. If you have a project, a problem, or something you'd like to improve, tell me about it. I'm always open to exploring new ideas and seeing whether I can help.</p>
+                        <p class="for">You don't need to have the answer before reaching out. We can start with a conversation.</p>
+                    </div>
+                </div>
+            </div>
+
+            <a class="more" href="services.hrml">Explore All Services &rarr;</a>
+        </div>
+    </section>
+
+    <!-- RECENT PROJECTS -->
+    <section aria-labelledby="recent-title">
+        <div class="wrap">
+            <h2 id="recent-title">A Few Projects I've Worked On</h2>
+            <p class="lede measure">Every project starts with an idea. Here are a few examples of websites I've developed to help bring those ideas to life.</p>
+            <div class="work-list">
+                <!-- The Foundation -->
+                <article class="project feature">
+                    <p class="kind">Ministry Website</p>
+                    <h3>The Foundation<span class="status live">Live</span></h3>
+                    <p>A faith-based ministry website created to share information, connect with visitors, and support community activities.</p>
+
+                    <div class="links">
+                        <a href="https://glorytothefather.org/" target="_blank" rel="noopener noreferrer">Visit the Website</a>
+                    </div>
+                </article>
+
+                <!-- Word & Witness -->
+                <article class="project feature">
+                    <p class="kind">Apparel Website</p>
+                    <h3>Word &amp; Witness<span class="status live">Live</span></h3>
+                    <p>A Christian apparel website designed to showcase products, introduce the brand, and share its mission.</p>
+                    <div class="links">
+                        <a href="https://wordnwitness.com"target="_blank" rel="noopener noreferrer">Visit the Website</a>
+                    </div>
+                </article>
+            </div>
+            <a class="more" href="projects.html">View All Projects &rarr;</a>
+        </div>
+    </section>
+
+    <!-- CHRISTIAN FOUNDATION -->
+    <section class="band" aria-labelledby="foundation-title">
+        <div class="wrap foundation-grid"></div>
+            <div class="measure">
+                <h2 id="foundation-title">Built on Faith. Guided by Purpose.</h2>
+                <p>CEA Projects is part of Christ Establishes All, a faith-driven business rooted in Christian values.</p>
+                <p>I believe in treating people with honetsy, patience, and respect. Whether I'm building a website, organizing information, or helping someone work through a technology problem, my goal is to provide thoughtful, dependable service.</p>
+                <p>My faith guides how I approach my work, and my services are open to anyone.</p>
+                <a>Christ Establishes All</a>
+            </div>
+    </section>
+
+    <!-- FINAL CALL TO ACTION -->
+     <section aria-labelledby="contact-title">
+        <div class="wrap">
+            <div class="cta">
+                <div>
+                    <h2 id="contact-title">Let's Figure It Out Together</h2>
+                    <p>Have an idea, a question, or a technology problem you're trying to solve? You don't need to have everything figured out before reaching out.</p>
+                    <p>Tell me a little about what you're working on, and we can discuss the next steps together.</p>
+                </div>
+
+                <a class="btn" href="start.html">Tell Me About Your Project</a>
+            </div>
+        </div>
+     </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="band">
+    <div class="wrap">
+        <div class="foot-grid">
+            <div>
+                <p class="foot-brand"><img src="cea_logo.png" width="64" height="64" alt=""><span class="brand-name">Christ Establishes All</span></p>
+                <p class="foot-verse">"No one, having put his hand to the plow, and looking back, is fit for the kingdom of God." Luke 9:62</p>
+            </div>
+
+            <div>
+                <h3>Pages</h3>
+                <ul>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="start.html">Start</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Contact</h3>
+                <ul>
+                    <li><a href="mailto:aleitlein@ceaprojectdev.com">Email me</a></li>
+                    <li><a href="https://github.com/RaphLink">GitHub</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="https://christestablishesall.com">Christ Establishes All</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="copy">&copy; 2026 Christ Establishes All (CEA). CEA Project Dev provides websites development, data organization, and technology assistance.</p>
+    </div>
+</footer>
+
+<script src="main.js"></script>
+
 </body>
 </html>
-<!-- Cloudflare -->
