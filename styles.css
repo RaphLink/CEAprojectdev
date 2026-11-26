@@ -297,3 +297,28 @@ nav.section-tabs { display: block; width: auto; }
 /* When a tab is clicked, stop the section heading just below the
    header and tab bar instead of hiding underneath them. */
 html:has(.section-tabs) { scroll-padding-top: 9rem; }
+
+/* ==========================================================
+   Projects page additions
+   ========================================================== */
+
+/* Case studies stack one above another with space between. */
+.case-list { display: grid; gap: 1.75rem; margin-top: 2.5rem; }
+.case { padding: clamp(1.5rem, 3vw, 2.25rem); }
+.case h3 { font-size: clamp(1.4rem, 2.4vw, 1.75rem); }
+.case-intro { font-size: 1.1rem !important; max-width: 62ch; }
+
+/* "The goal / What I built / Built with" pairs: label on the left,
+   text on the right; stacked on phones. */
+.details { margin: 1.25rem 0 1.5rem; border-top: 1px solid var(--line); }
+.details > div { display: grid; grid-template-columns: 9rem 1fr; gap: .25rem 1.5rem; padding: .9rem 0; border-bottom: 1px solid color-mix(in srgb, var(--line) 55%, transparent); }
+.details dt { font-family: var(--display); font-weight: 500; color: var(--heading); }
+.details dd { margin: 0; color: var(--muted); font-size: 1.02rem; }
+
+/* Optional screenshot inside a case study. */
+.shot { margin: 0 0 1.5rem; border-radius: 10px; overflow: hidden; border: 1px solid var(--line); }
+.shot img { display: block; width: 100%; height: auto; }
+
+@media (max-width: 600px) {
+  .details > div { grid-template-columns: 1fr; }
+}
